@@ -20,4 +20,5 @@ struct node {
     struct node *children[27];  
 }*trie;
 ```
-
+Los metodos que acompañan al arbol son `init`, el cual nos sirve para agregar el nodo inicial y comenzar la creación de otros nodos;
+`insertWord`, en el cual tomamos un string e iteramos sobre el, revisando si sus caracteres ya forman parte del árbol y agregando los que todavía no pertenecen, hasta terminar el proceso y modificar el último nodo indicando que es fin de palabra; `searchWord`, el cual nos ayuda a determinar si en el árbol existe un string que le pasemos o no. Por último, el método `deleteWord` busca una palabra y le quita la calidad de ser fin de palabra.
