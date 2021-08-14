@@ -1,6 +1,6 @@
-#Trie
+# Trie
 
-##Que es?
+## Que es?
 
 Un trie es una estructura de datos de tipo árbol que permite la recuperación de información 
 en un tiempo de complejidad mucho menor que realizar una busqueda estandar en una lista. 
