@@ -40,10 +40,10 @@ bool searchWord(string word) {
     return currentNode->isWord;
 }
 
-bool searchWordandDelete(string word) {   // alto
+bool searchWordandDelete(string word) {  
     node *currentNode =  trie;
     for (int i = 0; i< word.length(); i++) {
-        int character = word[i] - 'a';       // i = 0 'a'-'a' = 0
+        int character = word[i] - 'a';      
         if(currentNode->children[character] == NULL ) {
            return false;
         }
@@ -78,10 +78,10 @@ void isThereWord(string word) {
     }
 }
 
-int biggestWord(string prefix) {   // alto
+int biggestWord(string prefix) {   
     node *currentNode =  trie;
     for (int i = 0; i< prefix.length(); i++) {
-        int character = prefix[i] - 'a';       // i = 0 'a'-'a' = 0
+        int character = prefix[i] - 'a';       
         if(currentNode->children[character] == NULL ) {
            return 0;
         }
