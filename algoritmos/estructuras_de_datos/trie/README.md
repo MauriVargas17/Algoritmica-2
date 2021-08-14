@@ -11,4 +11,13 @@ cada letra de la clave se sitúa en un nodo de forma que los hijos de un nodo re
 las distintas posibilidades de símbolos diferentes que pueden continuar al símbolo representado por el nodo padre.
 ## Como funciona?
 
-Creamos una estructura llamada `nodo` 
+Creamos una estructura llamada `nodo`, a la cual le daremos algunos atributos, como ser el caracter que contiene, si es una palabra
+y cuantos nodos hijos tiene, es decir, a cuantas otras palabras se deriva este nodo:
+```
+struct node {
+    char currentCharacter;       
+    bool isWord;                
+    struct node *children[27];  
+}*trie;
+```
+
