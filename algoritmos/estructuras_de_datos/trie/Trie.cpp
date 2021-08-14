@@ -123,6 +123,7 @@ void insertWord(string word, int w) {
     commonPrefix = auxPrefix;
 }
 
+
 void deleteWord(string word){
     cout<<word<<" deleted: "<<searchWordandDelete(word);
 }
