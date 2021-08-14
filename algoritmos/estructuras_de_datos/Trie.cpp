@@ -124,7 +124,7 @@ void insertWord(string word, int w) {
 }
 
 void deleteWord(string word){
-    cout<<word<<" deleted: "<<searchWordandDelete(word);
+    cout<<word<<" deleted: "<<searchWordandDelete(word)<<endl;
 }
 
 int main() {
