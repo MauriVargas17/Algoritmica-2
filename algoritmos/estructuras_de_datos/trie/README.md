@@ -9,4 +9,6 @@ secuencia de símbolos pertenecientes a un alfabeto. Las claves son almacenadas 
 y los nodos internos son pasarelas para guiar la búsqueda. El árbol se estructura de forma que 
 cada letra de la clave se sitúa en un nodo de forma que los hijos de un nodo representan 
 las distintas posibilidades de símbolos diferentes que pueden continuar al símbolo representado por el nodo padre.
-##Como funciona?
+## Como funciona?
+
+Creamos una estructura llamada `nodo` 
