@@ -8,4 +8,20 @@ solucion.
 
 ## Como funciona?
 
-El codigo 
+El codigo consiste en manejar un tablero `grid[][]` que almacene la solucion. Las funciones que usamos son `isValid()` que verifica si es valido colocar a una reina en una posicion especifica (es decir, que otra reina no puede comersela), despues tenemos al metodo `solveNQueen()` el cual usa el metodo anterior para verificar y recien colocar a la reina en la posicion de fila `i` y columna `col`; a continuacion, seguira verificando llamandose a si mismo. Si una solucion no es factible, el valor de esa casilla modificada volvera a ser 0 y se proseguira a explorar la fila siguiente. Si finalmente despues de explorar todas las opciones no se consigue una solucion, el metodo retorna 0:
+
+```
+bool solveNQueen(int board[N][N], int col) {
+   if (col >= N) 
+      return true;
+   for (int i = 0; i < N; i++) { 
+      if (isValid(board, i, col) ) {
+         board[i][col] = 1; 
+         if ( solveNQueen(board, col + 1)) 
+            return true;
+         board[i][col] = 0; 
+      }
+   }
+   return false; 
+}
+```
