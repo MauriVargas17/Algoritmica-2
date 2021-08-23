@@ -1,4 +1,4 @@
-###Este README.md contiene todas las descripciones de las estructuras
+### Este README.md contiene todas las descripciones de las estructuras
 
 # Trie
 
